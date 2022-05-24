@@ -1,4 +1,4 @@
-package com.ZacharyKarpinski
+package com.zacharykarpinski
 
 import io.micronaut.runtime.Micronaut
 import groovy.transform.CompileStatic

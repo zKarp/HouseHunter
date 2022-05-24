@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: com.ZacharyKarpinski
+defaultPackage: com.zacharykarpinski
 testFramework: junit
 sourceLanguage: groovy
 buildTool: gradle

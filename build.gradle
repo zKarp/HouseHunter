@@ -5,7 +5,7 @@ plugins {
 }
 
 version = "0.1"
-group = "com.ZacharyKarpinski"
+group = "com.zacharykarpinski"
 
 repositories {
     mavenCentral()
@@ -23,12 +23,13 @@ dependencies {
     runtimeOnly("org.apache.logging.log4j:log4j-api:2.17.2")
     runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:2.17.2")
     implementation("io.micronaut:micronaut-validation")
-
+    implementation("builders.dsl:spreadsheet-builder-poi:2.2.1")
+    implementation("io.micronaut.views:micronaut-views-thymeleaf")
 }
 
 
 application {
-    mainClass.set("com.ZacharyKarpinski.Application")
+    mainClass.set("com.zacharykarpinski.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
@@ -41,7 +42,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("com.ZacharyKarpinski.*")
+        annotations("com.zacharykarpinski.*")
     }
 }
 
